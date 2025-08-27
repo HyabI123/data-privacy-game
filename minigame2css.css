@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+  }
+
+  .game-container {
+    display: flex;
+    justify-content: center; /* centers images horizontally */
+    align-items: flex-start; /* aligns them at the top */
+    gap: 20px; /* space between images */
+    margin: 20px 0;
+  }
+  
+  .image-container {
+    flex: 1; /* makes them evenly sized */
+    /* prevent them from getting too wide */
+  }
+  
+  .image-container img {
+    width: 100%; /* responsive scaling */
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }

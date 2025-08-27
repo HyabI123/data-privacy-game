@@ -1,0 +1,40 @@
+/* body {
+    text-align: center;
+  } */
+.text1 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size:larger;
+  
+    opacity: 0; /* make the sentence hidden at first */
+
+  
+    animation: 
+      typing 2.5s steps(40, end) forwards, /*typing seconds can be adjusted for how long animation should be */
+      fadeIn 0.01s forwards, 
+      cursor 0.8s step-end infinite alternate;
+  
+        animation-delay: 0s, 0s, 0s; 
+  }
+  
+
+  /* .cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 0.8s step-end infinite alternate;
+  } 
+    confused on how curser is suppsoed to be i tried just adding a blinking line at the end but its in the wrong space */
+
+  @keyframes typing {
+    from { max-width: 0ch; }
+    to { max-width: 300ch; } /* needs to be big enough to show text for that line */
+  }
+  
+ /* fade in animation */
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  

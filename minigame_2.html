@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="minigame2css.css">
+
 </head>
 <body>
-    <a href="screen_5.html">[Second Minigame/Puzzle][spot the difference related]</a>
+    <h1>Spot the scam E-mail! </h1>
+    <div class="game-container">
+        <div class="image-container" id="image-left">
+            <img src="scamemail.png" alt="Left Image">
+        </div>
+        <div class="image-container" id="image-right">
+            <img src="realemail.png" alt="Right Image">
+        </div>
+    </div>
+    <div class="status-panel">
+        <p id="message">Find all the differences!</p>
+        <p>Differences found: <span id="found-count">0</span> / <span id="total-count">0</span></p>
+    </div>
+    
+    <!-- portal to next screen -->
+    <a href="screen_5.html">[Second Minigame/Puzzle][spot the difference related]</a> 
+    <script src="minigame_2js.js"></script>
 </body>
 </html>
