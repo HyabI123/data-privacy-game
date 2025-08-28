@@ -4,12 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="minigame4.css">
 </head>
 <body>
+    <!-- Header -->
+    <h1>
+        <span class="text1" style="animation-delay: 0.5s;">Click the Safe Link!</span>
+    </h1>
+    
+    <!-- Minigame 4 -->
+    <!-- Round 1 -->
+     <span class="text1" style="animation-delay: 1s;">
+        <p class="objective">Some links were airdropped. Which is safe to click?</p>
+    </span>
+    <div class="round" id="round1">
+        <span class="text1" style="animation-delay: 1.5s;">
+        <button onclick="badLink()">http://freestudent-prizes.com</button>
+        </span>
+        <span class="text1" style="animation-delay: 1.5s;">
+        <button onclick="safeLink(2)">https://school.edu/login</button>
+        </span>
+        <span class="text1" style="animation-delay: 1.5s;">
+        <button onclick="badLink()">http://schol-login.com</button>
+        </span>
+    </div>
+
+    <!-- Round 2 -->
+
+     <div class="round" id="round2" style="display:none;"> <!-- buttons will not display/overlap -->
+        
+        <span class="text1" style="animation-delay: 1s;">
+        <button onclick="safeLink(3)">www.portal.myschool.edu/grades</button>
+        </span>
+        <span class="text1" style="animation-delay: 1s;">
+        <button onclick="badLink()">www.mysch00l-grades-update.com</button>
+        </span>
+        <span class="text1" style="animation-delay: 1s;">
+        <button onclick="badLink()">www.myschool-reportcards.net</button>
+        </span>
+    </div>
+
+    <!-- Round 3 -->
+
+     <div class="round" id="round3" style="display:none;">
+        
+        <span class="text1" style="animation-delay: 1s;">
+        <button onclick="badLink()">www.free-lunch-voucher.biz</button>
+        </span>
+        <span class="text1" style="animation-delay: 1s;">
+        <button onclick="badLink()">www.paylunch-myschool.co</button>
+        </span>
+        <span class="text1" style="animation-delay: 1s;">
+        <button onclick="safeLink()">www.myschool.edu/lunch</button>
+        </span>
+    </div>
+
+    <!-- This text displays when a button is clicked -->
+    <span class="text1">
+        <p id="textStatus"></p>
+    </span>
+
+    <!-- Next Screen -->
     <p>
-        this is the last minigame
-         
         <a href="index.html">Start Again!</a>
     </p>
+    <!-- Link to JavaScript file -->
+    <script src="minigame4.js"></script>
 </body>
 </html>
