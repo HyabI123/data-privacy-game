@@ -11,32 +11,10 @@
   
     opacity: 0; /* make the sentence hidden at first */
 
-    
-/* Apply to all story spans */
-.text1 {
-  font-family: "Merriweather", Georgia, serif;
-  font-size: 1.2rem;
-  color: #3a2424; /* soft dark brown for readability */
-  line-height: 1.8;
-  display: block; /* makes each span behave like a paragraph */
-  margin-bottom: 12px;
-}
-
-/* Make links blend naturally into the story */
-.text1 a {
-  color: #6b3e2e; 
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.text1 a:hover {
-  color: #9b4e2e; /* warmer hover color */
-}
-
-.text1 {
-  animation: 
-    typing 2.5s steps(40, end) forwards, /*typing seconds can be adjusted for how long animation should be */
-    fadeIn 0.01s forwards, 
+  
+    animation: 
+      typing 2.5s steps(40, end) forwards, /*typing seconds can be adjusted for how long animation should be */
+      fadeIn 0.01s forwards, 
       cursor 0.8s step-end infinite alternate;
   
         animation-delay: 0s, 0s, 0s; 
@@ -59,4 +37,4 @@
   @keyframes fadeIn {
     to { opacity: 1; }
   }
-}
+  
