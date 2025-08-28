@@ -17,7 +17,7 @@
     <!-- Minigame 4 -->
     <!-- Round 1 -->
      <span class="text1" style="animation-delay: 1s;">
-        <p class="objective">Some links were airdropped. Which is safe to click?</p>
+        <p>Some links were airdropped. Which is safe to click?</p>
     </span>
     <div class="round" id="round1">
         <span class="text1" style="animation-delay: 1.5s;">
@@ -35,13 +35,13 @@
 
      <div class="round" id="round2" style="display:none;"> <!-- buttons will not display/overlap -->
         
-        <span class="text1" style="animation-delay: 1s;">
+        <span class="text1" style="animation-delay: 0.5s;">
         <button onclick="safeLink(3)">www.portal.myschool.edu/grades</button>
         </span>
-        <span class="text1" style="animation-delay: 1s;">
+        <span class="text1" style="animation-delay: 0.5;">
         <button onclick="badLink()">www.mysch00l-grades-update.com</button>
         </span>
-        <span class="text1" style="animation-delay: 1s;">
+        <span class="text1" style="animation-delay: 0.5;">
         <button onclick="badLink()">www.myschool-reportcards.net</button>
         </span>
     </div>
@@ -50,13 +50,13 @@
 
      <div class="round" id="round3" style="display:none;">
         
-        <span class="text1" style="animation-delay: 1s;">
+        <span class="text1" style="animation-delay: 0.5s;">
         <button onclick="badLink()">www.free-lunch-voucher.biz</button>
         </span>
-        <span class="text1" style="animation-delay: 1s;">
+        <span class="text1" style="animation-delay: 0.5s;">
         <button onclick="badLink()">www.paylunch-myschool.co</button>
         </span>
-        <span class="text1" style="animation-delay: 1s;">
+        <span class="text1" style="animation-delay: 0.5s;">
         <button onclick="safeLink()">www.myschool.edu/lunch</button>
         </span>
     </div>
@@ -65,6 +65,11 @@
     <span class="text1">
         <p id="textStatus"></p>
     </span>
+
+    <span class="text1">
+        <button id="finalBoss" style="display:none;">Continue!-></button>
+    </span>
+    
 
     <!-- Next Screen -->
     <p>
