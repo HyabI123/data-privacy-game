@@ -70,8 +70,8 @@ function checkAnswer(choice) {
       setTimeout(loadQuestion, 1000);
     } else {
       document.getElementById("quiz-box").innerHTML = `
-        <h2>🎉 You finished the quiz! Great job protecting your data!</h2>
-        <a href="screen_7.html">Continue</a>
+        <h2>You finished the quiz! Great job protecting your data!</h2>
+        <a href="../screen_7.html">Continue</a>
       `;
     }
   } else {
@@ -81,8 +81,8 @@ function checkAnswer(choice) {
       setTimeout(loadQuestion, 1000);
     } else {
       document.getElementById("quiz-box").innerHTML = `
-        <h2>💀 Game Over! You ran out of lives.</h2>
-        <a href="index.html">Restart</a>
+        <h2>Game Over! You ran out of lives.</h2>
+        <a href="../index.html">Restart</a>
       `;
     }
   }
