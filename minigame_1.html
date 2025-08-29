@@ -5,19 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Privacy Crossword</title>
     <link rel="stylesheet" href="minigame_1.css">
+    <style>
+        /* Additional styles for tabs and hints */
+        .hints-container {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .tab-button {
+            padding: 6px 12px;
+            border: none;
+            background-color: #111;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .tab-button.active {
+            background-color: #555;
+        }
+
+        .tab-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .tab-content li {
+            margin: 4px 0;
+        }
+    </style>
 </head>
 <body>
 
     <div id="crosswordContainer">
         <h1>Data Privacy Crossword</h1>
         <div id="grid" class="grid"></div>
-        <div class="legend">
-            Words: HACKED, SECURE, PHISHING, SCAM, PASSWORD, TWOFACTOR (2FA),
-            VPN, SECURITYISSUES, SUSPICIOUSEMAIL, PERSONALINFORMATION, PRIVACY
-        </div>
         <button id="check">Check</button>
+
+        <div class="hints-container">
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTab('across')">Across</button>
+                <button class="tab-button" onclick="showTab('down')">Down</button>
+            </div>
+
+            <div id="across" class="tab-content" style="display: block;">
+                <ul>
+                    <li>Problems that put your data or devices at risk</li>
+                    <li>When someone breaks into your account or device</li>
+                    <li>Keeping your personal info safe from others</li>
+                    <li>Safe and protected</li>
+                    <li>Fake messages that try to steal your info</li>
+                    <li>Your private data like name or password</li>
+                </ul>
+            </div>
+
+            <div id="down" class="tab-content" style="display: none;">
+                <ul>
+                    <li>A trick to steal money or info</li>
+                    <li>Secret word to log in</li>
+                    <li>Extra step to verify identity</li>
+                    <li>Tool to browse the internet securely</li>
+                </ul>
+            </div>
+        </div>
+
+
     </div>
-    <a href="screen_3.html">Next page</a>
+
     <script src="minigame_1.js"></script>
+    <script>
+        // Tab functionality I found from W2Schools
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            tabs.forEach(t => t.style.display = 'none');
+            buttons.forEach(b => b.classList.remove('active'));
+
+            document.getElementById(tabName).style.display = 'block';
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
 </body>
 </html>
