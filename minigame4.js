@@ -14,6 +14,7 @@ function safeLink(roundNumber) {
     //no more rounds
     document.getElementById("finalBoss").style.display = "block";
     document.getElementById("textStatus").style.display = "none";
+    document.getElementById("objective").style.display = "none";
   } 
 }
 
